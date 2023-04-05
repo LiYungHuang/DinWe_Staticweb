@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinWe Member Center</title>
+    <link rel="icon" type="image/x-icon" href="./image/enterprise_img/icon.png">
+</head>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+<!-- enterprise CSS -->
+<style>
+    @import './CSS/enterprise_facility.css';
+</style>
+
+<body>
+    <!-- HEADER NAV -->
+    <section>
+        <!-- NAV bar -->
+        <nav class="navbar fixed-top bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-1" href="./enterprise_index.html">
+                    <img class="logo" src="./image/enterprise_img/LOGO_A.png" alt="">
+                </a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary-emphasis active" aria-current="page"
+                            href="./enterprise_index.html">首頁</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary-emphasis" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">會員中心</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">基本資料</a></li>
+                            <li><a class="dropdown-item" href="#">設施服務</a></li>
+                            <li><a class="dropdown-item" href="#">評價留言</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-end" href="#">登出</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-secondary-emphasis" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                class="bi bi-bell mb-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="container">
+                                        <div class="text-body-tertiary pb-1 border-bottom">2023/03/22 11:29a.m.</div>
+                                        <div class="text-secondary m-1"> 收到一筆 2023/03/26(日) 訂位資料</div>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider opacity-50">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="container">
+                                        <div class="text-body-tertiary pb-1 border-bottom">2023/03/22 11:43a.m.</div>
+                                        <div class="text-secondary m-1"> 收到一筆 2023/03/26(日) 訂位資料，請進行確認</div>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider opacity-50">
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item text-secondary text-end" href="#">
+                                    <i class="bi bi-chevron-double-down"></i>
+                                    <span>點選看更多</span>
+                                    <i class="bi bi-three-dots"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- BODY -->
+    <section>
+        <div class="container my-2">
+            <span>O店O家O名O稱O，您好</span>
+        </div>
+        <div class="container mb-3">
+            <div class="row justify-content-between align-items-center majorColor text-light rounded-top">
+                <div class="col mt-2 ps-5 align-middle text-center h5 fw-bold letter-spacing10">設定列表</div>
+            </div>
+            <div class="row px-2 border rounded-bottom">
+                <div class="col-3 list-group list-group-flush mt-2 px-2">
+                    <div class="list-group-item h4 fw-bold ">設定項目</div>
+                    <a href="./enterprise.html" class="list-group-item list-group-item-action">基本資料</a>
+                    <a href="./enterprise_facility.html" class="list-group-item list-group-item-action">設施服務</a>
+                    <a href="./enterprise_review.html" class="list-group-item list-group-item-action">評價留言</a>
+                </div>
+                <div class="col-9 mt-2 px-4">
+                    <div class="row pb-2 justify-content-end text-end">
+                        上次資料更動日期：2023/03/26，15:41<br>
+                        異動者：BOSS
+                    </div>
+                    <div class="row h4 pb-2 border-bottom">設施服務</div>
+                    <div class="row mt-1 p-2">
+                        <form action="">
+                            <div class="mb-3 row align-items-center">
+                                <label for="people" class="col-lg-2 col-md-3 col-sm-4 col-5 col-form-label">可容納人數</label>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                                    <input type="number" class="form-control text-center" id="people" placeholder="20">
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-1 col-1 text-start">
+                                    <span>人</span>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="people" class="col-lg-2 col-md-3 col-sm-4 col-5 col-form-label">可容納桌數</label>
+                                <div class="col-lg-10 col-md-9 col-sm-8 col-7">
+                                    <div class="row  align-items-center mb-1">
+                                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 text-center">
+                                            <span>2人</span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-5 col-5">
+                                            <input type="number" class="form-control text-center" id="people" placeholder="--">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 text-start">
+                                            <span>桌</span>
+                                        </div>
+                                    </div>
+                                    <div class="row  align-items-center mb-1">
+                                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 text-center">
+                                            <span>4人</span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-5 col-5">
+                                            <input type="number" class="form-control text-center" id="people" placeholder="--">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 text-start">
+                                            <span>桌</span>
+                                        </div>
+                                    </div>
+                                    <div class="row  align-items-center mb-1">
+                                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 text-center">
+                                            <span>6人</span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-5 col-5">
+                                            <input type="number" class="form-control text-center" id="people" placeholder="--">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 text-start">
+                                            <span>桌</span>
+                                        </div>
+                                    </div>
+                                    <div class="row  align-items-center mb-1">
+                                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 text-center">
+                                            <span>圓桌</span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-5 col-5">
+                                            <input type="number" class="form-control text-center" id="people" placeholder="--">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 text-start">
+                                            <span>桌</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 row">
+                                <label for="people" class="col-lg-2 col-md-3 col-sm-4 col-5 col-form-label">可提供包廂</label>
+                                <div class="col-lg-10 col-md-9 col-sm-8 col-12  pt-1">
+                                    <div class="row  align-items-center mb-1">
+                                        <div class="row align-items-center my-1 ms-1">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    無提供包廂
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-4 col-5 text-center">
+                                            <span>大包廂</span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-5 col-6">
+                                            <input type="number" class="form-control text-center" id="people" placeholder="--">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 text-start">
+                                            <span>間</span>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-1">
+                                        <div class="col-lg-2 col-md-3 col-sm-4 col-5 text-center">
+                                            <span>小包廂</span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-5 col-6">
+                                            <input type="number" class="form-control text-center" id="people" placeholder="--">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 text-start">
+                                            <span>間</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="keyword" class="col-lg-2 col-md-3 col-sm-12 col-form-label">付款方式</label>
+                                <div class="col-lg-10 col-md-9 col-sm-12 pt-2">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            現金
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            VISA 金融卡
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            信用卡
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            街口支付
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            悠遊付
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            LINE PAY
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            APPLE PAY
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            GOOGLE PAY
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            台灣PAY
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="keyword" class="col-lg-2 col-md-3 col-sm-12 col-form-label">設施服務</label>
+                                <div class="col-lg-10 col-md-9 col-sm-12 pt-2">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            無線網路
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            座充插座
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            私人包廂
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            場地租借
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            禁菸餐廳
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            酒精飲料
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            汽車停車
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            停車場折抵優惠
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            機車專區
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            免費嬰兒車租借
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            專車接送
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            兒童座椅
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            兒童餐具
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            哺乳室
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            尿布台
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            課程體驗
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            兒童書區
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            球池
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            沙坑
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            農場
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            小動物
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            生態池
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            戲水池
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            溜滑梯
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            玩具區
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            無障礙友善設施
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            性別派對
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            滿月儀式
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            收涎
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            抓周活動
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center my-2">
+                                <button class="btn btn-warning me-2" type="button">修改</button>
+                                <button class="btn btn-danger" type="button">取消</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

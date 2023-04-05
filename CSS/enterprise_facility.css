@@ -1,0 +1,25 @@
+.majorColor {
+    background-color: #E98B2A;
+}
+
+.secColor {
+    background-color: #F9BF45;
+}
+
+body {
+    padding-top: 4.8rem;
+}
+
+.logo {
+    width: 200px;
+    margin: auto;
+}
+
+.nav-link:hover {
+    color: black !important;
+    font-weight: 700;
+}
+
+.letter-spacing10 {
+    letter-spacing: 30px;
+}
